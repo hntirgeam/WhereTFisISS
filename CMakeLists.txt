@@ -16,7 +16,3 @@ include_directories(src /usr/local/include)
 
 add_executable(Client ${SRCS} src/Core/main.cpp)
 target_link_libraries(Client pthread crypto ssl boost_system curl /usr/local/lib/libTgBot.a)
-
-
-# g++ main.cpp core.cpp --std=c++17 
-# -I/usr/local/include -lTgBot -lboost_system -lssl -lcrypto -lpthread
